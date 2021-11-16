@@ -42,7 +42,7 @@ namespace RunCat
         private ToolStripMenuItem themeMenu;
         private ToolStripMenuItem startupMenu;
         private NotifyIcon notifyIcon;
-        private string runner = UserSettings.Default.Runner;
+        private string runner = "bbballele"; //UserSettings.Default.Runner;
         private float scale = 200.0f;
         private int current = 0;
         private string systemTheme = "";
