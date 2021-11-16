@@ -42,7 +42,7 @@ namespace RunCat
         private ToolStripMenuItem themeMenu;
         private ToolStripMenuItem startupMenu;
         private NotifyIcon notifyIcon;
-        private string runner = "bbballele"; //UserSettings.Default.Runner;
+        private string runner = UserSettings.Default.Runner;
         private float scale = 200.0f;
         private int current = 0;
         private string systemTheme = "";
@@ -90,6 +90,10 @@ namespace RunCat
                 new ToolStripMenuItem("bbballele", null, SetRunner)
                 {
                     Checked = runner.Equals("bbballele")
+                },
+                new ToolStripMenuItem("blaze", null, SetRunner)
+                {
+                    Checked = runner.Equals("blaze")
                 }
             });
 
@@ -212,6 +216,12 @@ namespace RunCat
                     {
                         capacity = 11;
                         scale = 888.8f;
+                        break;
+                    }
+                case "blaze":
+                    {
+                        capacity = 27;
+                        scale = 200.0f;
                         break;
                     }
             }
