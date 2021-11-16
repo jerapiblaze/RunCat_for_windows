@@ -118,6 +118,7 @@ namespace RunCat
             ContextMenuStrip contextMenuStrip = new ContextMenuStrip(new Container());
             contextMenuStrip.Items.AddRange(new ToolStripItem[]
             {
+                new ToolStripMenuItem("About", null, OpenAboutBox),
                 runnerMenu,
                 themeMenu,
                 startupMenu,
@@ -340,5 +341,15 @@ namespace RunCat
             cpuTimer.Start();
         }
 
+        private void OpenAboutBox(object sender, EventArgs e)
+        {
+            MessageBox.Show("A cute animated icon on your taskbar.\n" +
+                "\n" +
+                "The speed of the animation is based on your cpu usage.\n" +
+                "Please restart the application after changing settings to save memory.\n" +
+                "\n" +
+                "Original project: https://github.com/Kyome22/RunCat_for_windows \n" +
+                "My folked repo: https://github.com/jerapiblaze/RunCat_for_windows", "About");
+        }
     }
 }
