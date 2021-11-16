@@ -90,6 +90,10 @@ namespace RunCat
                 new ToolStripMenuItem("bbballele", null, SetRunner)
                 {
                     Checked = runner.Equals("bbballele")
+                },
+                new ToolStripMenuItem("blaze", null, SetRunner)
+                {
+                    Checked = runner.Equals("blaze")
                 }
             });
 
@@ -212,6 +216,12 @@ namespace RunCat
                     {
                         capacity = 11;
                         scale = 888.8f;
+                        break;
+                    }
+                case "blaze":
+                    {
+                        capacity = 27;
+                        scale = 200.0f;
                         break;
                     }
             }

@@ -4,3 +4,5 @@ obj/
 [Ll]og/
 [Ll]ogs/
 .DS_Store
+RunCat.exe
+RunCat.pdb
